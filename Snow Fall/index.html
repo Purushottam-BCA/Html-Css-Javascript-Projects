@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Fall</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section{
+            background:url(pic.jpg);
+            background-size: cover;
+            width: 100%;
+            height:100vh;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h2{
+            position: relative;
+            display: flex;
+            justify-content: left;
+            min-height: 100vh;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 3em;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-left: 20px;
+            color:rgb(4, 35, 63);
+            line-height: 1em;
+        }
+
+        .snow1{
+            background: url(snow.png);
+            background-repeat: repeat;
+            background-size: 50px;
+            position: absolute;
+            height: 100vh;
+            width:100%;
+            top:0;
+            left:0;
+            position: absolute;
+            animation:First 10s linear infinite;
+        }
+
+        @keyframes First{
+            0%{
+                background-position: 0px 0px;
+            }
+
+            50%{
+                background-position: 50px 300px;
+            }
+
+            100%{
+                background-position: 100px 650px;
+            }            
+        }
+
+        .snow2{
+            background: url(snow.png);
+            background-repeat: repeat;
+            background-size: 150px;
+            position: absolute;
+            height: 100vh;
+            width:100%;
+            top:0;
+            left:0;
+            animation:Second 15s linear infinite;
+        }
+
+        @keyframes Second{
+            0%{
+                background-position: 0px -100px;
+            }
+
+            50%{
+                background-position: 0px 300px;
+            }
+
+            100%{
+                background-position: 0px 650px;
+            }            
+        }
+
+        .snow3{
+            background: url(snow.png);
+            background-repeat: repeat;
+            background-size: 2000px;
+            position: absolute;
+            height: 100vh;
+            width:100%;
+            top:0;
+            left:0;
+            animation:Third 20s linear infinite;
+        }
+
+        @keyframes Third{
+            0%{
+                background-position: 0px 100px;
+            }
+
+            50%{
+                background-position: 150px 300px;
+            }
+
+            100%{
+                background-position: 300px 650px;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>Snow fall</h2>
+        <div class="snow1"></div>
+        <div class="snow2"></div>
+        <div class="snow3"></div>
+    </section>
+</body>
+</html>
