@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="https://image.flaticon.com/icons/png/512/2876/2876481.png" sizes="32x32" />
+  <link rel="stylesheet" href="style.css">
+  <title>Sticky Notes</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div>
+          <h1><i style="color: #523dff;" class="fas fa-sticky-note"></i> Sticky Notes</h1>
+        </div>
+        <div class="text-hint">
+        <marquee  direction=right behavior=alternate scrollamount=6> <p> After writing,  press Enter key to add it to Sticky note. </p> </marquee>
+        </div>
+      <div>
+          <button id="btn" onclick="createNote()">Create Note</button>
+          <button onclick="deleteNotes()">Delete all</button>
+      </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="createBox">
+      <textarea placeholder="Write note..." id="user-input" maxlength="135" style="font-size: 1.5rem;"></textarea>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="notes"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
