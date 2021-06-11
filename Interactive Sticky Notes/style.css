@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color:  #c1a62096;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.text-hint{
+  border-radius: 10px;
+  width:47%;
+  height:25px;
+  padding: 10px;
+  padding-right: 10px;
+  background-color: #3a3637;
+}
+
+.text-hint p{
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+  width:100px;
+  margin-right: 2px;
+  padding: 8px;
+  font-family: inherit;
+  background: rgb(19, 17, 17);
+  color:white;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px #999;
+}
+
+button:hover{
+  color: rgb(5, 5, 5);
+  background-color: rgba(250, 243, 243, 0.932);
+  font-weight: bold;
+}
+
+button:active{
+  background-color: rgba(250, 243, 243, 0.932);
+  box-shadow: 0 3px #999;
+  font-weight: bold;
+  transform: translateY(1px);
+}
+
+.container{
+  width: 98%;
+  margin: auto;
+  position: relative;
+}
+
+.nav{
+  color: #3a3637;
+  padding: 15px 0;
+  text-shadow: 1px 1px black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.createBox{
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -160px;
+  z-index: 1;
+  width: 275px;
+  height: 275px;
+  outline: none;
+}
+
+.createBox textarea{
+  border-radius: 15px;
+  width: 275px;
+  height: 275px;
+  padding: 25px;
+  font-family: inherit;
+  outline: none;
+  resize: none;
+  box-shadow:  0px 2px 10px 5px #2f073399;
+}
+
+.notes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.note{
+  width:250px;
+  height:250px;
+  padding:25px;
+  transition: 2s;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+}
+
+.note h1{
+  font-size: 1.5rem;
+}
+
+/* Responsive for mobile  */
+@media(max-width:768px){
+  .nav{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media(max-width:480px){
+  .createBox{
+    width: 100%;
+  }
+}
